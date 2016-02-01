@@ -394,13 +394,13 @@ figure img {
 /* footer */
 footer {
     display: block;
-    height: 80px;
+    height: 85px;
     width: 100%;
     background: #505050;
     margin-top: 50px;
     text-align: center;
     color: #E6E6E6;
-    padding-top: 40px;
+    padding-top: 50px;
 }
 
 /* for desktop */
