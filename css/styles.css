@@ -1,0 +1,460 @@
+/* general */
+body {
+    font-family: Slack-Lato, appleLogo, sans-serif;
+/*    background: lightgrey;*/
+    font-weight: 200;
+}
+
+em {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:focus, a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/* navigation bar */
+nav {
+    position:fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.6);
+    border: none;
+    z-index: 999;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 10px 20px;
+    
+}
+.logo a {
+    color: rgb(127, 206, 222);
+}
+
+.login a {
+    display: block;
+    margin: 5px 20px;
+    vertical-align: middle;
+    border: 1px solid rgb(127, 206, 222);
+    border-radius: 18px;
+    padding: 0.6em;
+    color: rgb(127, 206, 222);
+}
+
+.login a:hover { 
+    background-color: rgb(127, 206, 222);
+    color: white;
+}
+/* nav ends */
+
+/* container */
+.container {
+    position: relative;
+    padding-top: 50px;
+    width: 55%;
+    max-width: 640px;
+    margin-left: 30%;
+    
+}
+.crumb {
+    margin: 8px 0;
+}
+header {
+    position: relative;
+    margin: 20px auto;
+}
+
+/* header */
+h1 {
+    font-size: 36px;
+}
+
+.subtitle {
+    overflow: auto;
+    margin-bottom: 40px;
+}
+
+.author {
+    float: left;
+    width: 50%;
+}
+.author .avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    margin-right: 18px;
+}
+.author .name{
+    margin: 10px 0 0 0;
+    font-size: 16px;
+}
+.author .name a {
+    color: rgb(105, 196, 214);
+}
+
+.share {
+    float: right;
+    margin-right: 10px;
+}
+.share img {
+    height: 30px;
+}
+.share-icon {
+    display: inline-block;
+    border-radius: 15px;
+    height: 30px;
+}
+.share-icon-fb {
+    border-color: #3067a3;
+    color: #3067a3;
+    fill: #3067a3;
+    border: 1px solid #3067a3;
+}
+.share-icon-tw {
+    border-color: #03b3ee;
+    color: #03b3ee;
+    fill: #03b3ee;
+    border: 1px solid #03b3ee;
+}
+.share-icon-pin {
+    border-color: #b9252c;
+    color: #b9252c;
+    fill: #b9252c;
+    border: 1px solid #b9252c;
+}
+
+/* main content */
+article {
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.main-content p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 20px 0 20px -60px;
+    padding-left: 60px;
+    text-align: left;
+}
+
+article .actions span {
+    font-weight: 100; 
+    margin-right: 15px;
+}
+
+article .actions .glyphicon {
+    color: rgb(105, 196, 214);
+}
+
+article .actions .number {
+    color: #A7A7A7;
+}
+
+article .is-selected {
+    display: none;
+}
+
+.bookmark {
+    position: relative;
+    opacity: 0;
+    margin-left: -40px;
+    margin-top: 6px;
+    font-size: 18px;
+    color: #A7A7A7;
+    float: left;
+}
+.main-content .marked {
+    color: rgb(105, 196, 214);
+}
+
+.main-content .quote {
+    margin: 0;
+    padding: 10px 30px;
+    border-left: 4px solid rgb(127, 206, 222);
+    color: #0F5361;
+    line-height: 1.5em;
+}
+
+
+figure {
+    width:100%;
+    text-align: left;
+    color: grey;
+    font-size: 0.9em;
+    margin: 20px 0;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*vh单位 ： viewport height*/
+
+.video {
+    width: 100%;
+    height: 390px;
+}
+
+/* aside */
+.category {
+    position: fixed;
+    top: 90px;
+    left: 60px;
+}
+
+.category li {
+    margin: 17px 0;
+    height: 10px;
+}
+
+.nav-pills>li>a {
+    border-radius: 5px;
+}
+
+.nav>li>a {
+    position: static;
+    padding: 0;
+    width: 8px;
+    height: 8px;
+    border: 1px solid rgb(105, 196, 214); 
+    background: none;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    background: rgb(105, 196, 214);
+    width: 14px;
+    height:14px;
+    border-radius: 8px;
+    margin-left: -3px;
+    margin-top: -3px;
+}
+
+.nav-pills>li.active>a>span, .nav-pills>li.active>a:focus>span, .nav-pills>li.active>a:hover>span {
+    top: -4px;
+    left: 19px;
+}
+
+.category li .marked {
+    background: rgb(105, 196, 214);
+}
+
+.category li span {
+    color: rgb(105, 196, 214);
+    display: inline-block;
+    width: 300px;
+    position: relative;
+    top: -7px;
+    left: 16px;
+}
+/* aside ends */
+
+/* bottom section */
+.section-title h2 {
+    font-size: 20px;
+}
+.related {
+    border-bottom: 1px solid #E6E6E6;
+}
+.related .single-related {
+    display: inline-block;
+    width: 32.6%;
+    margin: 5px 0.1%;
+    font-size: 16px;
+}
+.related .single-related:hover {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.related .single-related img {
+    width: 100%;
+    height: 110px;
+}
+.related .single-related .title {
+    height: 80px;
+}
+.related .single-related p {
+    padding: 5px;
+}
+
+.related .single-related .catalogue {
+    color: #A7A7A7;
+    font-size: 14px;
+}
+
+.comment {
+    border-bottom: 1px solid #E6E6E6;
+    padding: 5px 0 3px 0;
+}
+
+.comment .replier .avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    margin-right: 18px;
+}
+.comments p{
+    font-size: 16px;
+}
+.comment .comment-content {
+    margin: 0;
+}
+.comments .replier .name{
+    margin: 10px 0 0 0;
+}
+.comments .replier .name a{
+    color: rgb(105, 196, 214);
+}
+
+.comments .replier .time {
+    font-size: 12px;
+    color: #A7A7A7;
+}
+.comments .comment-note {
+    text-align: right;
+    
+}
+.comments .comment-note .unit{
+    font-size: 14px;
+    color: #A7A7A7;
+    vertical-align: top;
+}
+.comments .comment-note span {
+    color: rgb(127, 206, 222); 
+}
+.comment .is-selected {
+    display: none;
+}
+.comment .quote {
+    display: block;
+    color: #A7A7A7;
+    padding: 13px 20px;
+    font-style: italic;
+}
+/* comment ends */
+
+/* ads */
+.in-content-ads {
+    position: absolute;
+    left: 680px;
+    display: none;
+}
+.in-content-ads .ad img{
+    width: 180px;
+    height: auto;
+}
+
+.bottom-ads-xl {
+    position: absolute;
+    bottom: 0;
+    left: 730px;
+    display: none;
+}
+
+.bottom-ads-xl .ad img{
+    width: 130px;
+    height: auto;
+}
+
+.bottom-ads {
+    display: block;
+    margin-top: 20px;
+}
+.bottom-ads .ad {
+    display: inline-block;
+    width: 32.8%;
+    margin: 1px 0;
+}
+.bottom-ads .ad img{
+    width: 100%;
+    height: auto;
+}
+
+/* ads ends */
+
+/* footer */
+footer {
+    display: block;
+    height: 100px;
+    width: 100%;
+    background: #505050;
+    margin-top: 50px;
+    text-align: center;
+    color: #E6E6E6;
+    padding-top: 60px;
+}
+
+/* for desktop */
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: none;
+        margin-left: 28%;
+        width: 670px;
+    }
+    .in-content-ads {
+        display: block;
+    }
+    .bottom-ads-xl {
+        display: block;
+    }
+    .bottom-ads {
+        display: none;
+    }
+}
+
+/* for iPad */
+@media only screen and (max-width: 991px) {
+    .container {
+        margin: 0 auto;
+        width: 600px;
+    }
+    #myScrollspy {
+        display: none;
+    }
+}
+/* for iPhone */
+@media only screen and (max-width: 767px) {
+    .container {
+        margin: 0 auto;
+        width: 90%;
+        font-size: 1em;
+    }
+    .bookmark {
+        display: none;
+    }
+    body>nav {
+        display: none;
+    }
+    .container {
+        padding-top: 20px;
+    }
+}
+@media only screen and (max-width: 568px) {
+    .bottom-ads .ad {
+        width: 49%;
+        margin: 1px 0;
+    }
+    .video {
+        height: 266px;
+    }
+}
+
