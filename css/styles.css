@@ -1,8 +1,7 @@
 /* general */
 body {
-    font-family: Slack-Lato, appleLogo, sans-serif;
-/*    background: lightgrey;*/
-    font-weight: 200;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
 
 em {
@@ -50,11 +49,11 @@ nav {
 
 .login a {
     display: block;
-    margin: 5px 20px;
+    margin: 7px 20px;
     vertical-align: middle;
     border: 1px solid rgb(127, 206, 222);
     border-radius: 18px;
-    padding: 0.6em;
+    padding: 7px 8px;
     color: rgb(127, 206, 222);
 }
 
@@ -84,6 +83,7 @@ header {
 /* header */
 h1 {
     font-size: 36px;
+    font-weight: 700;
 }
 
 .subtitle {
@@ -105,6 +105,7 @@ h1 {
 .author .name{
     margin: 10px 0 0 0;
     font-size: 16px;
+    font-weight: 400;
 }
 .author .name a {
     color: rgb(105, 196, 214);
@@ -221,6 +222,7 @@ figure img {
     left: 60px;
 }
 
+/*
 .category li {
     margin: 16px 0;
     height: 10px;
@@ -263,6 +265,55 @@ figure img {
     width: 300px;
     position: relative;
     top: -7px;
+    left: 16px;
+}
+*/
+.category li {
+    margin: 0;
+    height: 26px;
+}
+
+.nav>li>a {
+    position: static;
+    padding: 0;
+    width: 5px;
+    height: 27px;
+/*    border-left: 1px solid rgb(105, 196, 214); */
+    border-right: 1px solid rgb(105, 196, 214); 
+    background: none;
+    border-radius: 0;
+    transition: width 0.1s ease-out;
+}
+.nav>li>a:hover {
+    background: rgb(105, 196, 214);
+    width: 9px;
+}
+.nav-stacked>li+li {
+    margin: 0;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    background: rgb(105, 196, 214);
+/*    width: 14px;*/
+/*    height:14px;*/
+/*    border-radius: 8px;*/
+/*    margin-left: -3px;*/
+/*    margin-top: -3px;*/
+}
+
+.nav-pills>li.active>a>span, .nav-pills>li.active>a:focus>span, .nav-pills>li.active>a:hover>span {
+    font-weight: 400;
+}
+
+.category li .marked {
+    background: rgb(105, 196, 214);
+}
+
+.category li span {
+    color: rgb(105, 196, 214);
+    display: inline-block;
+    width: 300px;
+    position: relative;
+    top: 3px;
     left: 16px;
 }
 /* aside ends */
@@ -320,6 +371,7 @@ figure img {
 }
 .comments .replier .name{
     margin: 10px 0 0 0;
+    font-weight: 400;
 }
 .comments .replier .name a{
     color: rgb(105, 196, 214);
@@ -358,9 +410,28 @@ figure img {
     left: 680px;
     display: none;
 }
+.in-content-ads .ad .title{
+    color: #A7A7A7;
+    font-size: 1.1em;
+    height: 20px;
+    padding-left: 1px;
+}
 .in-content-ads .ad img{
     width: 180px;
     height: auto;
+}
+.in-content-ads .ad .mask{
+    margin-top: 20px;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 180px;
+    height: 150px;
+    background: rgba(242,250,255,0.7);
+    transition: opacity 0.3s linear;
+}
+.in-content-ads .ad .mask:hover{
+    opacity: 0;
 }
 
 .bottom-ads-xl {
@@ -392,6 +463,9 @@ figure img {
 /* ads ends */
 
 /* footer */
+.bottom-bar {
+    display: none;
+}
 footer {
     display: block;
     height: 85px;
@@ -447,6 +521,49 @@ footer {
     .container {
         padding-top: 20px;
     }
+    .share {
+        display: none;
+    }
+    .author {
+        width: 100%;
+    }
+    .related .single-related {
+        width: 100%;
+        border-bottom: 1px solid #E6E6E6;
+    }
+    .related .single-related:last-of-type {
+        border-bottom: none;
+    }
+    .related .single-related img {
+        width: 100%;
+        height: 200px;
+    }
+    .related .single-related .title {
+        height: 30px;
+    }
+    .bottom-bar {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        background: white;
+        padding: 0 10px;
+        
+    }
+    .bottom-bar a {
+        margin-top: 12px;
+        margin-right: 10px;
+        font-size: 1.8em;
+        font-weight: 100;
+        color: rgb(105, 196, 214);
+    }
+    .footer {
+        padding-top: 40px;
+    }
+    .bottom-bar .is-selected {
+        display: none;
+    }
 }
 @media only screen and (max-width: 568px) {
     .bottom-ads .ad {
@@ -458,3 +575,8 @@ footer {
     }
 }
 
+/* add webkit */
+/* add animations */
+/* night mode */
+/* add comment text area, expand height guadually */
+/* include in-text links*/
