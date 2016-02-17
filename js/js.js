@@ -11,6 +11,19 @@ $(document).ready(function () {
 			$(this).prev().css("opacity", "0");
 		}
 	});
+	$(".main-content p a").click(function(){
+		if($(window).width >= 1200){
+			$(".main-content .outer-link").css("opacity", 1);
+		}else {
+			//open new tab
+		}
+	});
+	$(".main-content .outer-link").css("top", function(){
+		return $(this).prev().offset().top;
+	});
+	$(".main-content .outer-link a").click(function(){
+		//open new tab
+	});
 	$(".bookmark").click(function(){
 		if($(this).hasClass("marked")){
 			var thisMark = $(this);
@@ -28,6 +41,25 @@ $(document).ready(function () {
 			});
 		}
 	});
+//	$("#myScrollspy li.active").siblings().removeClass("affected");
+    $(window).scroll(function() {
+        $("#myScrollspy ul li.active").siblings().removeClass("affected");
+        $("#myScrollspy ul li.active").prev().addClass("affected");
+    });
+    
+	$("a.inline-link").click(function(e){
+		e.preventDefault();
+		var ad = $(this).parent().next();
+		if(ad.hasClass("show-link")) {
+			ad.removeClass("show-link").addClass("hide-link");
+			setTimeout(function(){
+				ad.css("display", "none");
+			}, 500);
+		} else {
+		ad.css("display", "block");
+			ad.removeClass("hide-link").addClass("show-link");
+		}
+	});
 	
 	$(".not-selected").click(function(){
 		$(this).css("display", "none");
@@ -40,7 +72,6 @@ $(document).ready(function () {
 		$(this).next().html(Number($(this).next().html())-1);
 	}); 
 	$(".bookmark").click(function(){
-		//$(this).css("color", "rgb(105, 196, 214)");
 		$(this).toggleClass("marked");
 	}); 
 });

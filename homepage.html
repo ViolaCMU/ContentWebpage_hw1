@@ -21,7 +21,7 @@
             </div>        
         </nav>
         <aside id="myScrollspy" class="aside">
-            <ul class="category nav nav-pills nav-stacked">
+            <ul class="catalogue nav nav-pills nav-stacked">
                 <li class="active"><a href="#" class="point"><span>Heading</span></a></li>
                 <li><a href="#p1" class="point"></a></li>
                 <li><a href="#p2" class="point"></a></li>
@@ -41,7 +41,7 @@
                 <li><a href="#p16" class="point"></a></li>
                 <li><a href="#p17" class="point"></a></li>
                 <li><a href="#p18" class="point"></a></li>
-                <li><a href="#related" class="point"><span>Related contents</span></a></li>
+                <li><a href="#related" class="point"><span>Related</span></a></li>
                 <li><a href="#comments" class="point"><span>Comments</span></a></li>
             </ul>
         </aside>
@@ -83,7 +83,13 @@
                 <div class="bookmark">
                     <span class="glyphicon glyphicon-bookmark"></span>
                 </div>
-                <p id="p3">Our smartphones have become Swiss army knife–like appliances that include a dictionary, calculator, web browser, email, Game Boy, appointment calendar, voice recorder, guitar tuner, weather forecaster, GPS, texter, tweeter, Facebook updater, and flashlight. They’re more powerful and do more things than the most advanced computer at IBM corporate headquarters 30 years ago. </p>
+                <p id="p3">Our smartphones have become Swiss army knife–like appliances that include a dictionary, calculator, web browser, email, Game Boy, appointment calendar, voice recorder, guitar tuner, weather forecaster, GPS, texter, tweeter, <a href="" class="inline-link">Facebook</a> updater, and flashlight. They’re more powerful and do more things than the most advanced computer at IBM corporate headquarters 30 years ago. </p>
+                <div class="outer-link">
+                    <a href="http://www.theguardian.com/technology/2016/feb/03/how-facebook-changed-our-friendships" target="_blank" style="display: block;color:#333333;">
+                    <img src="https://i.guim.co.uk/img/media/9036d32ed9c9fc0cc476adce713d0d77a08b7f68/0_408_986_592/master/986.jpg?w=620&q=85&auto=format&sharp=10&s=09166b997c07201077ad63a711e5e9a3">
+                    <p class="title">How Facebook Changed Our Friendships</p></a>
+                    <a href="http://www.theguardian.com/technology/facebook" target='_blank' class="more">Explore more</a>
+                </div>
                 <div class="bookmark">
                     <span class="glyphicon glyphicon-bookmark"></span>
                 </div>
@@ -138,7 +144,13 @@
                 <div class="bookmark">
                     <span class="glyphicon glyphicon-bookmark"></span>
                 </div>
-                <p id="p10">Just having the opportunity to multitask is detrimental to cognitive performance. Glenn Wilson, former visiting professor of psychology at Gresham College, London, calls it info-mania. His research found that being in a situation where you are trying to concentrate on a task, and an email is sitting unread in your inbox, can reduce your effective IQ by 10 points. </p>
+                <p id="p10">Just having the opportunity to multitask is detrimental to cognitive performance. Glenn Wilson, former visiting professor of psychology at Gresham College, London, calls it <a class="inline-link" href="">info-mania</a>. His research found that being in a situation where you are trying to concentrate on a task, and an email is sitting unread in your inbox, can reduce your effective IQ by 10 points. </p>
+                <div class="outer-link">
+                    <a href="http://www.theguardian.com/money/2009/oct/05/avoid-multitasking" target="_target" style="display: block;color:#333333;">
+                        <img src="https://i.guim.co.uk/img/static/sys-images/Money/Pix/pictures/2008/11/03/officegettytonystone.jpg?w=620&q=85&auto=format&sharp=10&s=8820dd63448de8e7ef05824f49d4747f">
+                        <p class="title">If you only do one thing this week … avoid multitasking</p>
+                    </a>
+                </div>
                 <div class="bookmark">
                     <span class="glyphicon glyphicon-bookmark"></span>
                 </div>
@@ -190,34 +202,40 @@
                     <span class="glyphicon glyphicon-heart-empty not-selected"></span>
                     <span class="glyphicon glyphicon-heart is-selected"></span>
                     <span class="number"> 234</span> 
-                    <a href="#comments"><span class="glyphicon glyphicon-comment"></span></a>
+                    <a href="#related"><span class="glyphicon glyphicon-comment"></span></a>
                     <span class="number"> 4</span>
                 </p>
             </article>
             <section id="related" class="related">
                 <div class="section-title">
                     <h2>Related contents</h2>
+                    <a>Read More  ></a>
                 </div>
                 <a class="single-related">
                     <img src="https://static-secure.guim.co.uk/sys-images/Guardian/Pix/pictures/2013/5/8/1368015286378/Computer-keys-spelling-Th-009.jpg">
                     <p class="title">Conscious computing: how to take control of your life online</p>
-                    <p class="catalogue">OBSERVER</p>
+                    <p class="category">OBSERVER</p>
                 </a>
                 
                 <a class="single-related">
                     <img src="https://cdn-images-1.medium.com/max/1200/1*HNgYRhzra7v0G3XgLhqahw.jpeg">
                     <p class="title">12 Questions on the Future of Design</p>
-                    <p class="catalogue">MEDIUM</p>
+                    <p class="category">MEDIUM</p>
                 </a>
                 <a class="single-related">
                     <img src="https://cdn-images-1.medium.com/max/2000/1*fBaWNeiqoAM15m0eZlt5wA.jpeg">
                     <p class="title">How The Internet Changed Everything</p>
-                    <p class="catalogue">TECH WEBLOG</p>
+                    <p class="category">TECH WEBLOG</p>
                 </a>
             </section>
             <section id="comments" class="comments">
                 <div class="section-title">
                     <h2>Comments</h2>
+                    <a id="add-cmt" href="#related"><span class="glyphicon glyphicon-comment"></span></a>
+                </div>
+                <div class="new-comment">
+                    <textarea class="cmt-content" rows="4"></textarea>
+                    <a class="submit">Submit</a>
                 </div>
                 <div class="comment">
                     <div class="replier">
